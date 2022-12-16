@@ -1,0 +1,20 @@
+{
+  "lint": {
+    "files": {
+      "exclude": [
+        "README.md"
+      ]
+    }
+  },
+  "fmt": {
+    "files": {
+      "exclude": [
+        "README.md"
+      ]
+    }
+  },
+  "importMap": "import_map.json",
+  "tasks": {
+    "start": "deno run --allow-read --allow-write --allow-net --allow-env ./main.ts"
+  }
+}
