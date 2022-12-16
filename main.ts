@@ -56,7 +56,10 @@ serve(async (request: Request) => {
     const image = await Deno.makeTempFile({ suffix: ".jpg" });
 
     await download(
-      await getImageUrl(hash || "") ||
+      await getImageUrl(hash || "").catch((error) => {
+        console.error(error);
+        return undefined;
+      }) ||
         `https://www.gravatar.com/avatar/${hash}?default=robohash`,
       {
         file: basename(image),
