@@ -1,0 +1,9 @@
+{
+  "imports": {
+    "std/": "https://deno.land/std@0.186.0/",
+    "deno_slack_api/": "https://deno.land/x/deno_slack_api@2.1.0/",
+    "velo/": "https://deno.land/x/velo@1.0.0/",
+    "imagescript/": "https://deno.land/x/imagescript@1.2.15/",
+    "cliffy/": "https://deno.land/x/cliffy@v0.25.7/"
+  }
+}
