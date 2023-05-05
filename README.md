@@ -10,7 +10,7 @@ deno install \
   --allow-read --allow-write --allow-net --allow-env \
   --unstable \
   --force \
-  https://raw.githubusercontent.com/ansanloms/slack-gravatar-server/v0.1.0/start.ts
+  https://raw.githubusercontent.com/ansanloms/slack-gravatar-server/v0.1.0/mod.ts
 ```
 
 ## Usage
