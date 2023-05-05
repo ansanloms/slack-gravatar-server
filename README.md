@@ -6,10 +6,12 @@ Gravatar server withs Slack profile images.
 
 ```bash
 deno install \
+  --import-map https://raw.githubusercontent.com/ansanloms/slack-gravatar-server/v0.1.0/deno.json \
   --name gravatar \
-  --allow-read --allow-write --allow-net --allow-env --unstable \
+  --allow-read --allow-write --allow-net --allow-env \
+  --unstable \
   --force \
-  https://raw.githubusercontent.com/ansanloms/slack-gravatar-server/main/mod.ts
+  https://raw.githubusercontent.com/ansanloms/slack-gravatar-server/v0.1.0/start.ts
 ```
 
 ## Usage
@@ -17,4 +19,3 @@ deno install \
 ```bash
 gravatar --port 3000 --slack-token "xoxb-0000000000000-0000000000000-xxxxxxxxxxxxxxxxxxxxxxxx"
 ```
-
