@@ -1,9 +1,0 @@
-{
-  "imports": {
-    "std/": "https://deno.land/std@0.166.0/",
-    "deno_slack_api/": "https://deno.land/x/deno_slack_api@1.5.0/",
-    "checksum/": "https://deno.land/x/checksum@1.4.0/",
-    "velo/": "https://deno.land/x/velo@1.0.0/",
-    "express": "npm:express@4.18.2"
-  }
-}
