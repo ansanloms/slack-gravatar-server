@@ -1,22 +1,12 @@
 {
-  "lint": {
-    "exclude": [
-      "README.md"
-    ]
-  },
-  "fmt": {
-    "exclude": [
-      "README.md"
-    ]
-  },
   "imports": {
     "std/": "https://deno.land/std@0.186.0/",
     "deno_slack_api/": "https://deno.land/x/deno_slack_api@2.1.0/",
-    "checksum/": "https://deno.land/x/checksum@1.4.0/",
     "velo/": "https://deno.land/x/velo@1.0.0/",
-    "express": "npm:express@4.18.2"
+    "imagescript/": "https://deno.land/x/imagescript@1.2.15/",
+    "cliffy/": "https://deno.land/x/cliffy@v0.25.7/"
   },
   "tasks": {
-    "start": "deno run --allow-read --allow-write --allow-net --allow-env ./main.ts"
+    "start": "deno run --allow-read --allow-write --allow-net --allow-env ./start.ts"
   }
 }
