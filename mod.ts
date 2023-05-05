@@ -1,12 +1,12 @@
-import { serve } from "std/http/server.ts";
-import { Status, STATUS_TEXT } from "std/http/http_status.ts";
-import * as path from "std/path/mod.ts";
-import * as fs from "std/fs/mod.ts";
-import { crypto } from "std/crypto/mod.ts";
-import { SlackAPI } from "deno_slack_api/mod.ts";
-import { Velo } from "velo/mod.ts";
-import { decode, Image } from "imagescript/mod.ts";
-import { Command } from "cliffy/command/mod.ts";
+import { serve } from "./deps/std/http/server.ts";
+import { Status, STATUS_TEXT } from "./deps/std/http/http_status.ts";
+import * as path from "./deps/std/path/mod.ts";
+import * as fs from "./deps/std/fs/mod.ts";
+import { crypto } from "./deps/std/crypto/mod.ts";
+import { SlackAPI } from "./deps/deno_slack_api/mod.ts";
+import { Velo } from "./deps/velo/mod.ts";
+import { decode, Image } from "./deps/imagescript/mod.ts";
+import { Command } from "./deps/cliffy/command/mod.ts";
 
 const { options } = await new Command()
   .name("slack-gravatar-server")
