@@ -1,5 +1,16 @@
 {
+  "fmt": {
+    "proseWrap": "preserve"
+  },
+  "imports": {
+    "std/": "https://deno.land/std@0.220.0/",
+    "deno_slack_api/": "https://deno.land/x/deno_slack_api@2.2.0/",
+    "imagescript/": "https://deno.land/x/imagescript@1.2.17/",
+    "@slack/web-api": "npm:@slack/web-api@7.0.2"
+  },
+  "unstable": ["kv"],
   "tasks": {
+    "dev": "deno run --watch --allow-read --allow-write --allow-net --allow-env ./mod.ts",
     "start": "deno run --allow-read --allow-write --allow-net --allow-env ./mod.ts"
   }
 }
